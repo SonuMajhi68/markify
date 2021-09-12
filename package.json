@@ -1,0 +1,38 @@
+{
+  "name": "markify",
+  "version": "0.1.0",
+  "description": "note and markdown editor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ./src/main/main.js",
+    "demo": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonuMajhi68/markify.git"
+  },
+  "author": "sonu majhi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SonuMajhi68/markify/issues"
+  },
+  "homepage": "https://github.com/SonuMajhi68/markify#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "electron": "^14.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "sass": "^1.39.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
