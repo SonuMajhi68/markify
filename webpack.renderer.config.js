@@ -1,5 +1,5 @@
 const path = require("path");
-const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -43,8 +43,14 @@ module.exports = {
     extensions: [".js"],
   },
 
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Markify",
+    }),
+  ],
+
   output: {
-    filename: "bundle.js",
+    filename: "bundle.renderer.js",
     path: path.resolve(__dirname, "build"),
   },
 };

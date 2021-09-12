@@ -4,8 +4,10 @@
   "description": "note and markdown editor",
   "main": "main.js",
   "scripts": {
-    "start": "electron ./src/main/main.js",
-    "demo": "webpack --config webpack.config.js"
+    "start": "electron ./build/bundle.main.js",
+    "compile": "npm run compile:main && npm run compile:renderer",
+    "compile:main": "webpack --config webpack.main.config.js",
+    "compile:renderer": "webpack --config webpack.renderer.config.js"
   },
   "repository": {
     "type": "git",
