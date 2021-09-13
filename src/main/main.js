@@ -1,6 +1,6 @@
 const { app, BrowserWindow } = require("electron");
-const path = require("path");
-const fs = require("fs");
+// const path = require("path");
+// const fs = require("fs");
 
 let mainWindow;
 
@@ -20,7 +20,7 @@ function createWindow() {
   });
 
   mainWindow.loadFile("index.html");
-  // mainWindow.openDevTools();
+  mainWindow.openDevTools();
 }
 
 app.whenReady().then(createWindow);

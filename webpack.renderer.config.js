@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
 
-  entry: "./src/renderer/app.js",
+  entry: "./src/renderer/index.js",
 
   devtool: "inline-source-map",
 
@@ -46,6 +46,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Markify",
+      template: "./src/index.ejs",
     }),
   ],
 
