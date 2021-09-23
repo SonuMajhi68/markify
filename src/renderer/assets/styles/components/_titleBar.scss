@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   -webkit-app-region: drag;
-  height: 30px;
+  height: 45px;
 
   &_title {
     padding: 8px;
@@ -19,7 +19,7 @@
   &_window-control {
     align-self: stretch;
     background-color: $tb-main;
-    flex-basis: 90px;
+    flex-basis: 150px;
     display: flex;
     -webkit-app-region: no-drag;
     user-select: none;

@@ -40,9 +40,20 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
       },
+      // {
+      //   test: /\.svg$/,
+      //   use: ["@svgr/webpack"],
+      // },
       {
-        test: /\.svg$/,
-        use: ["@svgr/webpack"],
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "images/[hash]-[name].[ext]",
+            },
+          },
+        ],
       },
     ],
   },

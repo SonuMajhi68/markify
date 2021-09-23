@@ -1,8 +1,6 @@
 import React from "react";
 
-import Close from "../assets/icons/control/close.svg";
-import Max from "../assets/icons/control/max.svg";
-import Min from "../assets/icons/control/min.svg";
+import { Close, Max, Min } from "../assets/icons/icon";
 
 export default function TitleBar() {
   return (
@@ -11,13 +9,13 @@ export default function TitleBar() {
       <div className="titlebar_menu"></div>
       <div className="titlebar_window-control">
         <div id="minimize">
-          <Min />
+          <Min size={17} />
         </div>
         <div id="maximize">
-          <Max />
+          <Max size={17} />
         </div>
         <div id="close">
-          <Close />
+          <Close size={17} />
         </div>
       </div>
     </div>
