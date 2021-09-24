@@ -9,6 +9,6 @@ git merge $MERGE_BRANCH
 
 git branch -d $MERGE_BRANCH
 
-git push origin --delete MERGE_BRANCH
+git push origin --delete $MERGE_BRANCH
 
 git fetch -p

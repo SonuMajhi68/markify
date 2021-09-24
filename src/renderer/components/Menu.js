@@ -98,7 +98,7 @@ export default function Menu() {
         className="menu"
         onClick={() =>
           myFunction(
-            document.getElementsByClassName("menu")[3].firstElementChild
+            document.getElementsByClassName("menu")[4].firstElementChild
           )
         }
       >
