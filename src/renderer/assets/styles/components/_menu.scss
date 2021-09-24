@@ -1,0 +1,42 @@
+.mainmenu {
+  display: flex;
+  list-style-type: none;
+  height: 100%;
+  margin: 0%;
+  color: grey;
+  justify-content: center;
+
+  & li {
+    flex-basis: 90px;
+    flex-shrink: 0;
+    align-self: center;
+    position: relative;
+    -webkit-app-region: no-drag;
+    text-align: center;
+    user-select: none;
+  }
+
+  & .submenu {
+    background-color: #333333;
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    width: 200px;
+    top: 25px;
+    z-index: 5;
+    padding: 0%;
+
+    & li {
+      padding: 10px 0 0 20px;
+      text-align: start;
+
+      &:last-child {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  & .show {
+    display: block;
+  }
+}

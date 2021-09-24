@@ -7,7 +7,7 @@
   height: 45px;
 
   &_title {
-    padding: 8px;
+    padding: 10px 8px 6px 8px;
     font-size: 12px;
   }
 
@@ -23,6 +23,10 @@
     display: flex;
     -webkit-app-region: no-drag;
     user-select: none;
+
+    & img {
+      filter: invert($tb-col-bght);
+    }
 
     & div {
       flex-basis: 130px;

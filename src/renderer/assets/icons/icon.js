@@ -4,6 +4,14 @@ import close from "./control/close.svg";
 import max from "./control/max.svg";
 import min from "./control/min.svg";
 
+import logo from "./logo/logo.svg";
+
+// Title bar logo
+
+const Logo = (props) => (
+  <img src={logo} alt="React Logo" width={props.size} height={props.size} />
+);
+
 // Window Control
 
 const Close = (props) => (
@@ -18,4 +26,4 @@ const Min = (props) => (
   <img src={min} alt="React Logo" width={props.size} height={props.size} />
 );
 
-export { Close, Max, Min };
+export { Close, Max, Min, Logo };
