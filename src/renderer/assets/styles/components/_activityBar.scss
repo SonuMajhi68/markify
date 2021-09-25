@@ -1,4 +1,48 @@
 .workspace_activityBar {
   width: 50px;
   background-color: $tb-main;
+  display: flex;
+  flex-direction: column;
+
+  &_navigation {
+    flex-basis: 120px;
+    display: flex;
+    flex-direction: column;
+
+    & div {
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      & img {
+        filter: invert(0.5);
+      }
+
+      &:first-child {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  &_space {
+    flex-grow: 1;
+  }
+
+  &_user {
+    flex-basis: 100px;
+    display: flex;
+    flex-direction: column;
+
+    & div {
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      & img {
+        filter: invert(0.5);
+      }
+    }
+  }
 }

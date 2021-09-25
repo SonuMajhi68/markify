@@ -49,4 +49,4 @@ const Folder = (props) => (
   <img src={folder} alt="React Logo" width={props.size} height={props.size} />
 );
 
-export { Close, Max, Min, Logo, Folder, Toc, User, Folder, Setting };
+export { Close, Max, Min, Logo, Folder, Toc, User, Setting };
