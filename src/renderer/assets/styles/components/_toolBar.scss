@@ -1,0 +1,13 @@
+.workspace_toolbar {
+  height: 34px;
+  background-color: #dadada;
+  color: grey;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 11px;
+  width: calc(50%);
+  position: absolute;
+}
