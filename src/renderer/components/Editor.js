@@ -2,6 +2,7 @@ import React from "react";
 
 import Switch from "./Switch";
 import ToolBar from "./ToolBar";
+import Info from "./Info";
 
 export default function Editor() {
   return (
@@ -9,9 +10,7 @@ export default function Editor() {
       <ToolBar />
       <Switch />
       <div className="test"></div>
-      <span className="workspace_editor_info">
-        <p>w 20</p>
-      </span>
+      <Info />
     </div>
   );
 }
