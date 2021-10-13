@@ -1,4 +1,5 @@
 const path = require("path");
+// const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -67,6 +68,7 @@ module.exports = {
       title: "Markify",
       template: "./src/index.ejs",
     }),
+    // new webpack.ExternalsPlugin('commonjs', ['electron'])
   ],
 
   output: {
