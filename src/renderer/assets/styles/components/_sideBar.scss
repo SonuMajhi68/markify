@@ -1,4 +1,18 @@
 .workspace_sideBar {
   width: 50px;
-  background-color: green;
+  background-color: #373b40;
+
+  &_container {
+    margin: 10px;
+
+    &_open {
+      background-color: red;
+      text-align: center;
+      border-radius: 3px;
+      padding: 5px 10px;
+      margin: 0 auto;
+      max-width: 300px;
+      min-width: 100px;
+    }
+  }
 }

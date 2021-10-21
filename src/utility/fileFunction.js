@@ -11,6 +11,11 @@ function getFiles(dir) {
         const file = {};
         file.filePath = dir + "/" + fileName;
         file.isDirectory = !stats.isFile();
+
+        if (file.isDirectory) {
+          file.files = getFiles(file.filePath);
+        }
+
         return file;
       });
     });
